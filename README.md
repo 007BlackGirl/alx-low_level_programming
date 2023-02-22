@@ -1,1 +1,1 @@
-This is a debugging project
+This is a c programming project
