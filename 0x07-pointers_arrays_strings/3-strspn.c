@@ -7,7 +7,7 @@
  * Return: number of bytes in the initial segment
  */
 
-unsigned int _strrspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, len = 0;
 
@@ -15,13 +15,13 @@ unsigned int _strrspn(char *s, char *accept)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[i])
+			if (s[i] == accept[j])
 			{
 				len++;
 				break;
 			}
 		}
-		if (s[i] != accept[i])
+		if (s[i] != accept[j])
 			break;
 	}
 	return (len);
